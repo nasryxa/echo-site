@@ -1,0 +1,228 @@
+.pic-frame {
+  width: 200px;             
+  height: 200px;
+  background: #fff;        
+  padding: 6px;            
+  box-shadow: 2px 10px 24px rgba(0, 0, 0, 0.25); 
+  margin: 0 auto;
+}
+
+.pic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #a2ce8a;
+}
+
+.rings-up {
+    position: absolute;
+    left:50px;
+    top:15px;
+    width: 100px;
+    height: 20px;
+    background: repeating-radial-gradient(
+    circle at 50% 50%,
+    transparent 0 7px,   
+    #ffffff 7px 10px);
+  background-size: 20px 20px; /*размер узора*/
+  background-repeat: repeat-x;
+}
+
+.rings-right {
+    position: absolute;
+    left:140px;
+    top:25px;
+    width: 20px;
+    height: 100px;
+    background: repeating-radial-gradient(
+        circle at 50% 50%,
+        transparent 0 7px,   
+        #ffffff 7px 10px);
+  background-size: 20px 20px;
+  background-repeat: repeat-y;
+}
+
+.rings-left {
+    position: absolute;
+    left:40px;
+    top:25px;
+    width: 20px;
+    height: 100px;
+    background: repeating-radial-gradient(
+        circle at 50% 50%,
+        transparent 0 7px,   
+        #ffffff 7px 10px);
+  background-size: 20px 20px;
+  background-repeat: repeat-y;
+}
+
+
+.window{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 55px;
+    top: 30px;
+    background: radial-gradient(circle at 60% 45%, #eaf3ff 20%, #2f6fe0 80%);
+    overflow: hidden;
+    outline: 5px solid #fff;
+}
+
+.sun{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -20px;
+    left: 65px;
+    border-radius: 50%;
+    outline: 4px solid #ffc400;
+    background:#ffe600;
+}
+
+.table{
+    position: relative;
+    left: 55px;
+    top: 110px;
+}
+
+.table-countertop{
+    position: absolute;
+    width: 90px;
+    height: 10px;
+    background: #c66900;
+}
+
+.table-foot{
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    left: 35px;
+    background: #c66900;
+    border-radius: 70% 70% 60% 60%/85% 85% 50% 50%;;
+}
+
+.table-bottom{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    background: #c66900;
+    left: 20px;
+    top: 45px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.teapot{
+    position: relative;
+    left: 55px;
+    top: 70px;
+}
+
+.teapot-top{
+    position: absolute;
+    width: 7px;
+    height: 9px;
+    left: 34px;
+    background: #eb001f;
+    border-radius: 50%;
+}
+
+.teapot-cap{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 23px;
+    top:3px;
+    background: radial-gradient(circle at 30% 30%, #ffc1d1 10%, #eb001f 70%);
+    border-radius: 50%;
+}
+
+.teapot-nose{
+    position: absolute;
+    left:5px;
+    top: 15px;
+    width: 25px;
+    height: 8px;
+    background: #eb001f;
+    clip-path: polygon(0% 30%, 100% 0%, 100% 50%, 0% 100%);
+    transform: rotate(35deg); 
+}
+
+.teapot-handle{
+    position: absolute;
+    left: 50px;
+    height: 15px;
+    width: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: 3px solid #eb001f;
+    background: transparent;
+}
+
+.teapot-body{
+    position: absolute;
+    width: 45px;
+    height: 35px;
+    top: 11px;
+    left: 15px;
+    background: radial-gradient(circle at 30% 40%, #ffc1d1 20%, #eb001f 80%);
+    border-radius: 50%;
+}
+
+
+.chair{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 85px;
+}
+
+.chair-back{
+    position: absolute;
+    width: 30px;
+    height: 110px;
+    right: 5px;
+    border: 6px solid transparent;
+    border-right-color: #c66900;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.chair-sit{
+    position: absolute;
+    width: 35px;
+    height: 10px;
+    top: 55px;
+    left: 20px;
+    background: #c66900;
+}
+
+.chair-leg{
+    position: absolute;
+    width: 6px;
+    height: 55px;
+    top: 55px;
+    left: 45px;
+    background: #c66900;
+}
+
+.chair-pattern {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    width: 36px;
+    height: 10px;
+    background: repeating-radial-gradient( 
+        #814500 0px 4px,
+        transparent 4px 12px);
+        
+  background-size: 12px 10px;
+  background-repeat: repeat-x;
+}
+
+.chair-left{
+    left:0px;
+}
+.chair-right{
+    left:170px;
+    transform: scaleX(-1);
+}

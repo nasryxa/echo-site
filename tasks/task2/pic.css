@@ -1,0 +1,174 @@
+
+
+.clip{
+  box-sizing: border-box;
+  border: 3px solid #000;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(to top, #6fcffb 0%, #ffffff 100%);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx{
+    display: flex;
+    align-items: center;
+}
+
+.clip_title{
+    margin-top: 5px;
+    font-size: 20px;   
+    visibility: hidden;
+
+}
+
+.clip_dream{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.clip_star{
+    height: 25px;
+}
+.clip:hover .clip_title{
+    visibility: visible;
+}
+
+
+.clip_animation{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.clip_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    visibility: hidden;          
+}
+
+.img_1{
+    visibility: visible;         
+}
+
+.clip:hover .img_1{ 
+    animation: frame1 1.2s step-end infinite; }
+.clip:hover .img_2{ 
+    animation: frame2 1.2s step-end infinite; }
+.clip:hover .img_3{ 
+    animation: frame3 1.2s step-end infinite; }
+.clip:hover .img_4{ 
+    animation: frame4 1.2s step-end infinite; }
+
+@keyframes frame1{
+    0%  { visibility: visible; }
+    25% { visibility: hidden; }
+}
+@keyframes frame2{
+    0%  { visibility: hidden; }
+    25% { visibility: visible; }
+    50% { visibility: hidden; }
+}
+@keyframes frame3{
+    0%  { visibility: hidden; }
+    50% { visibility: visible; }
+    75% { visibility: hidden; }
+}
+@keyframes frame4{
+    0%  { visibility: hidden; }
+    75% { visibility: visible; }
+    100%  { visibility: hidden; }
+}
+
+
+.star_animation:hover .clip_star{
+    animation: fly 1.5s infinite;
+}
+@keyframes fly {
+    0%{
+        transform: translate(0,0) rotate(0deg) scale(1);
+    }
+    20%{
+        transform: translate(5px,-4px) rotate(90deg) scale(1.2);
+    }
+    40%{
+        transform: translate(-10px,10px) rotate(180deg) scale(0.8);
+    }
+    60%{
+        transform: translate(-10px,-3px) rotate(270deg) scale(1.2);
+    }
+    80%{
+        transform: translate(5px,5px) rotate(360deg) scale(0.8);
+    }
+    100%{
+        transform: translate(0,0) rotate(0deg) scale(1);
+    }
+}
+
+
+
+.clip_dream_near{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    color: transparent;
+}
+.clip_brush{
+    height: 20px;
+    pointer-events: none;
+}
+
+.clip:active .clip_dream{
+    display: none;
+}
+.clip:active .clip_dream_near{
+    display: flex;
+    animation: show_text 2s forwards;
+}
+@keyframes show_text {
+    0% {
+        color:transparent;
+    }
+    100% {
+        color:#000;
+    }
+    
+}
+
+.clip:active .clip_brush{
+    animation: brush_trace 1.8s linear forwards;
+}
+
+@keyframes brush_trace{
+    0%   { transform: translate(0px,   0px); }
+    15%  { transform: translate(15px, -4px); }
+    25%  { transform: translate(30px,  0px); }
+    35%  { transform: translate(45px,  4px); }
+    50%  { transform: translate(60px,  0px); }
+    65%  { transform: translate(75px, -4px); }
+    75%  { transform: translate(90px, 0px); }
+    85%  { transform: translate(105px, 4px); }
+    100% { transform: translate(120px, 0px); }
+}
+
+.clip:active{
+    animation: breathe 2s ease-in-out infinite;
+}
+
+@keyframes breathe{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+
+
+
