@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-тест</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="tasks/task3/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="На главную">
+                <span class="logo__icon"></span>
+                <span class="logo__text">ECHO</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="artists.html" class="nav__link">Артисты</a></li>
+                    <li><a href="backstage.html" class="nav__link nav__link_active">Бэкстейдж</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <a href="backstage.html" class="back">← все задания</a>
+            
+            <h1>DOM-тест. Сленг</h1>
+            <section class="bio">
+                <h2 class="bio__title">О задании</h2>
+                <p>Задача была сделать тест, в котором вопросы и ответы создаются на странице с помощью JavaScript. Мой
+                    вариант посвящён молодёжному сленгу: нужно угадать, что значат слова вроде «краш», «заовнить» и
+                    «бефефе». Нажмите кнопку «Вопрос», чтобы получить следующий вопрос, и выберите ответ.</p>
+            </section>
+
+            <section class="quiz">
+                <button id="btnQuestion" class="btn">Вопрос</button>
+                <p id="message" class="message"></p>
+                <div id="area" class="area"></div>
+                <div id="stats" class="stats"></div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Echo. Авдеева АБ.</p>
+            <address class="footer__contact">avdeeva.ab@edu.sbpstu.ru</address>
+        </div>
+    </footer>
+
+    <script src="tasks/task3/questions.js"></script>
+</body>
+</html>

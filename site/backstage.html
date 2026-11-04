@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания — концертный дневник</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="На главную">
+                <span class="logo__icon"></span>
+                <span class="logo__text">ECHO</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="artists.html" class="nav__link">Артисты</a></li>
+                    <li><a href="backstage.html" class="nav__link  nav__link_active">Бэкстейдж</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <a href="index.html" class="back">← главная</a>
+            <h1>Бэкстейдж</h1>
+
+            <div class="artists">
+                <a href="task1.html" class="artist">
+                    <img class="artist__img" src="images/tasks/task1.webp" alt="Скриншот первого задания">
+                    <div class="artist__info">
+                        <h2 class="artist__name">Рисунок на CSS</h2>
+                        <p class="artist__genre">Комната с окном, чайником, столом и стульями</p>
+                    </div>
+                    <div class="artist__count">
+                        <span class="artist__number">1</span>
+                        <span class="artist__label">задание</span>
+                    </div>
+                </a>
+
+                <a href="task2.html" class="artist">
+                    <img class="artist__img" src="images/tasks/task2.webp" alt="Скриншот второго задания">
+                    <div class="artist__info">
+                        <h2 class="artist__name">Flexbox-ролик</h2>
+                        <p class="artist__genre">Анимированный ролик на CSS, без JavaScript</p>
+                    </div>
+                    <div class="artist__count">
+                        <span class="artist__number">2</span>
+                        <span class="artist__label">задание</span>
+                    </div>
+                </a>
+
+                <a href="task3.html" class="artist">
+                    <img class="artist__img" src="images/tasks/task3.webp" alt="Скриншот третьего задания">
+                    <div class="artist__info">
+                        <h2 class="artist__name">DOM-тест. Сленг</h2>
+                        <p class="artist__genre">Тест на JavaScript</p>
+                    </div>
+                    <div class="artist__count">
+                        <span class="artist__number">3</span>
+                        <span class="artist__label">задание</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Echo. Авдеева АБ.</p>
+            <address class="footer__contact">avdeeva.ab@edu.sbpstu.ru</address>
+        </div>
+    </footer>
+</body>
+</html>

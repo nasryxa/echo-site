@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-ролик</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="tasks/task2/pic.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="На главную">
+                <span class="logo__icon"></span>
+                <span class="logo__text">ECHO</span>
+            </a>
+
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="artists.html" class="nav__link">Артисты</a></li>
+                    <li><a href="backstage.html" class="nav__link nav__link_active">Бэкстейдж</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+            <a href="backstage.html" class="back">← все задания</a>
+            <h1>Flexbox-ролик</h1>
+
+            <section class="bio">
+                <h2 class="bio__title">О задании</h2>
+                <p>Задача была создать анимированный ролик размером 200×200 пикселей, используя Flexbox и CSS-анимации, без JavaScript. В ролике человечек идёт за мечтой: при наведении курсора появляется надпись «Иду за мечтой» и запускается анимация шагов, а если нажать на ролик и удерживать его, надпись сменяется на «Мечта рядом!».</p>
+
+                <h3 class="bio__title">Как пользоваться</h3>
+                <ul class="bio__list">
+                    <li><b>Наведите курсор на ролик</b> — человечек начнёт идти, сверху появится надпись.</li>
+                    <li><b>Наведите курсор на звезду</b> — она начнёт кружиться и летать.</li>
+                    <li><b>Нажмите и удерживайте ролик</b> — появится надпись «Мечта рядом!», кисть «прорисует» её слева направо, а сам ролик начнёт плавно пульсировать.</li>
+                </ul>
+            </section>
+
+            <section class="task-demo">
+                <div class="flx">
+                    <div class="clip">
+                        <div class="clip_title">
+                            <div class="clip_dream">
+                                Иду за мечтой
+                                <div class="star_animation">
+                                    <img class="clip_star" src="tasks/task2/var1/zvezda.png" alt="Звезда">
+                                </div>
+                            </div>
+                            <div class="clip_dream_near">
+                                Мечта рядом!
+                                <img class="clip_brush" src="tasks/task2/var1/brush.png" alt="Кисть">
+                            </div>
+                        </div>
+                        <div class="clip_animation">
+                            <img class="clip_img img_1" src="tasks/task2/var1/man1.png" alt="Кадр 1">
+                            <img class="clip_img img_2" src="tasks/task2/var1/man2.png" alt="Кадр 2">
+                            <img class="clip_img img_3" src="tasks/task2/var1/man3.png" alt="Кадр 3">
+                            <img class="clip_img img_4" src="tasks/task2/var1/man2.png" alt="Кадр 4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Echo. Авдеева АБ.</p>
+            <address class="footer__contact">avdeeva.ab@edu.sbpstu.ru</address>
+        </div>
+    </footer>
+</body>
+</html>
